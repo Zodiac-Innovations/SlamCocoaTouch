@@ -11,7 +11,11 @@
 		AA2026811F90451A005D402F /* SlamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2026801F90451A005D402F /* SlamButton.swift */; };
 		AA2026831F90453D005D402F /* SlamCocoaTouch.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AA2026821F90453D005D402F /* SlamCocoaTouch.podspec */; };
 		AA2026861F9046C5005D402F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AA2026841F9046C5005D402F /* README.md */; };
-		AA2026871F9046C5005D402F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AA2026851F9046C5005D402F /* LICENSE */; };
+		AA2026871F9046C5005D402F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA2026851F9046C5005D402F /* LICENSE.txt */; };
+		AA2026B81F917499005D402F /* SlamType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2026B71F917499005D402F /* SlamType.swift */; };
+		AA2026BA1F917501005D402F /* SlamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2026B91F917501005D402F /* SlamView.swift */; };
+		AA2026BC1F9175B9005D402F /* SlamLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2026BB1F9175B9005D402F /* SlamLabel.swift */; };
+		AA2026BE1F9175C4005D402F /* SlamSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2026BD1F9175C4005D402F /* SlamSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +25,11 @@
 		AA2026801F90451A005D402F /* SlamButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamButton.swift; sourceTree = "<group>"; };
 		AA2026821F90453D005D402F /* SlamCocoaTouch.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SlamCocoaTouch.podspec; sourceTree = "<group>"; };
 		AA2026841F9046C5005D402F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		AA2026851F9046C5005D402F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AA2026851F9046C5005D402F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AA2026B71F917499005D402F /* SlamType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamType.swift; sourceTree = "<group>"; };
+		AA2026B91F917501005D402F /* SlamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamView.swift; sourceTree = "<group>"; };
+		AA2026BB1F9175B9005D402F /* SlamLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamLabel.swift; sourceTree = "<group>"; };
+		AA2026BD1F9175C4005D402F /* SlamSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				AA2026821F90453D005D402F /* SlamCocoaTouch.podspec */,
-				AA2026851F9046C5005D402F /* LICENSE */,
+				AA2026851F9046C5005D402F /* LICENSE.txt */,
 				AA2026841F9046C5005D402F /* README.md */,
 				AA2026771F904504005D402F /* SlamCocoaTouch */,
 				AA2026761F904504005D402F /* Products */,
@@ -57,7 +65,11 @@
 		AA2026771F904504005D402F /* SlamCocoaTouch */ = {
 			isa = PBXGroup;
 			children = (
+				AA2026B71F917499005D402F /* SlamType.swift */,
+				AA2026B91F917501005D402F /* SlamView.swift */,
 				AA2026801F90451A005D402F /* SlamButton.swift */,
+				AA2026BD1F9175C4005D402F /* SlamSwitch.swift */,
+				AA2026BB1F9175B9005D402F /* SlamLabel.swift */,
 				AA2026781F904504005D402F /* SlamCocoaTouch.h */,
 				AA2026791F904504005D402F /* Info.plist */,
 			);
@@ -134,7 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2026871F9046C5005D402F /* LICENSE in Resources */,
+				AA2026871F9046C5005D402F /* LICENSE.txt in Resources */,
 				AA2026861F9046C5005D402F /* README.md in Resources */,
 				AA2026831F90453D005D402F /* SlamCocoaTouch.podspec in Resources */,
 			);
@@ -147,7 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2026BA1F917501005D402F /* SlamView.swift in Sources */,
+				AA2026B81F917499005D402F /* SlamType.swift in Sources */,
 				AA2026811F90451A005D402F /* SlamButton.swift in Sources */,
+				AA2026BC1F9175B9005D402F /* SlamLabel.swift in Sources */,
+				AA2026BE1F9175C4005D402F /* SlamSwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

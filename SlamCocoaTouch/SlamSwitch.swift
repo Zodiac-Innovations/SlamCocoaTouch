@@ -1,24 +1,22 @@
 //
-//  SlamButton.swift
+//  SlamSwitch.swift
 //  SlamCocoaTouch
-//  Closure based Button view
+//  Closure based Switch view
 //
-//  Created by Steve Sheets on 10/12/17.
+//  Created by Steve Sheets on 10/13/17.
 //  Copyright © 2017 Zodiac Innovations. All rights reserved.
 //
 
 import UIKit
 
-import UIKit
-
-/// Closure based Button view
-public class SlamButton: UIButton, SlamViewProtocol {
+/// Closure based Switch view
+public class SlamSwitch: UISwitch, SlamViewProtocol {
     
 /// Optional action closure invoked when view is pressed
-    public var actionClosure: SlamActionClosure?
+    public var actionClosure: SlamActionFlagClosure?
 
-/// Optional closure invoked by UI to fill view's title
-    public var contentClosure: SlamStringClosure?
+/// Optional closure invoked by UI to set view on/off
+    public var onClosure: SlamFlagClosure?
     
 /// Optional closure invoked by UI to display/hide view
     public var visibleClosure: SlamFlagClosure?
@@ -41,13 +39,13 @@ public class SlamButton: UIButton, SlamViewProtocol {
 /// Action method invoked when view is pressed. It invokes the closure.
     @objc func press(sender: UIView) {
         if let actionClosure = actionClosure {
-            actionClosure()
+            actionClosure(self.isOn)
         }
     }
     
     public func slamUI() {
-        // Hide the view if needed, set text if neeed, enable/disable if needed, then show if needed.
-
+        // Hide the view if needed, set on/off if neeed, enable/disable if needed, then show if needed.
+        
         let currentlyVisible = !self.isHidden
         var wantVisible = currentlyVisible
         if let visibleClosure = visibleClosure {
@@ -58,11 +56,11 @@ public class SlamButton: UIButton, SlamViewProtocol {
             self.isHidden = true
         }
         
-        if let contentClosure = contentClosure {
-            let string = contentClosure()
+        if let onClosure = onClosure {
+            let on = onClosure()
             
-            if string != self.title(for: .normal) {
-                self.setTitle(string, for: .normal)
+            if self.isOn != on {
+                self.isOn = on
             }
         }
         
