@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AA20267A1F904504005D402F /* SlamCocoaTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2026781F904504005D402F /* SlamCocoaTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2026811F90451A005D402F /* SlamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2026801F90451A005D402F /* SlamButton.swift */; };
+		AA2026831F90453D005D402F /* SlamCocoaTouch.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AA2026821F90453D005D402F /* SlamCocoaTouch.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA2026751F904504005D402F /* SlamCocoaTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlamCocoaTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2026781F904504005D402F /* SlamCocoaTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlamCocoaTouch.h; sourceTree = "<group>"; };
 		AA2026791F904504005D402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2026801F90451A005D402F /* SlamButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamButton.swift; sourceTree = "<group>"; };
+		AA2026821F90453D005D402F /* SlamCocoaTouch.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SlamCocoaTouch.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 		AA20266B1F904504005D402F = {
 			isa = PBXGroup;
 			children = (
+				AA2026821F90453D005D402F /* SlamCocoaTouch.podspec */,
 				AA2026771F904504005D402F /* SlamCocoaTouch */,
 				AA2026761F904504005D402F /* Products */,
 			);
@@ -46,6 +51,7 @@
 		AA2026771F904504005D402F /* SlamCocoaTouch */ = {
 			isa = PBXGroup;
 			children = (
+				AA2026801F90451A005D402F /* SlamButton.swift */,
 				AA2026781F904504005D402F /* SlamCocoaTouch.h */,
 				AA2026791F904504005D402F /* Info.plist */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					AA2026741F904504005D402F = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2026831F90453D005D402F /* SlamCocoaTouch.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2026811F90451A005D402F /* SlamButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		AA20267E1F904504005D402F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zodiacinovations.SlamCocoaTouch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +285,7 @@
 		AA20267F1F904504005D402F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
